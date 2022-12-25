@@ -32,6 +32,10 @@
     <string name="login">LogIn</string>
     <string name="register_question">Belum punya akun? Daftar di sini</string>
     <string name="daftar">Daftar</string>
+    <string name="signup">SignUp</string>
+    <string name="login_question">Sudah punya akun? Login di sini</string>
+    <string name="masuk">Masuk</string>
+    <string name="email">Email</string>
     <string-array name="e_wallet">
         <item>GoPay</item>
         <item>Dana</item>

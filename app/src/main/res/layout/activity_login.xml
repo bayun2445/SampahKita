@@ -67,11 +67,12 @@
             </com.google.android.material.textfield.TextInputLayout>
 
             <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_login"
                 style="@style/Button.Green"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/poppins"
-                android:text="@string/login" />
+                android:text="@string/masuk" />
 
         </LinearLayout>
     </androidx.cardview.widget.CardView>
