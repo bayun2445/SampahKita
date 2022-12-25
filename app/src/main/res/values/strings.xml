@@ -22,4 +22,15 @@
     <string name="non_organic_text">Non-organik</string>
     <string name="notes_information">*Informasi Opsional</string>
     <string name="request">Request</string>
+    <string name="ewallet_account">No Hp/Akun</string>
+    <string name="nominal">Nominal</string>
+    <string name="nominal_info">*Nilai minimum penukaran Rp50.000</string>
+    <string name="redeem">Tukarkan</string>
+    <string name="back">back</string>
+    <string-array name="e_wallet">
+        <item>GoPay</item>
+        <item>Dana</item>
+        <item>LinkAja</item>
+        <item>Ovo</item>
+    </string-array>
 </resources>
