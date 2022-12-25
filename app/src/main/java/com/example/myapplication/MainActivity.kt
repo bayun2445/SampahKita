@@ -10,6 +10,13 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         setButtonListener()
+        loadData()
+    }
+
+    private fun loadData() {
+        val username = intent.getStringExtra("username")
+
+        tv_username.text = username
     }
 
     private fun setButtonListener() {

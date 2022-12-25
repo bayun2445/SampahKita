@@ -45,7 +45,7 @@
                     android:id="@+id/et_sign_email"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:drawableEnd="@drawable/ic_baseline_email_24"
+                    android:drawableEnd="@drawable/ic_baseline_alternate_email_24"
                     android:inputType="text" />
 
             </com.google.android.material.textfield.TextInputLayout>
