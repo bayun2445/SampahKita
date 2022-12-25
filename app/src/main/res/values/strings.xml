@@ -13,5 +13,13 @@
     <string name="kg">Kg</string>
     <string name="sold">15</string>
     <string name="redeem_text">Tukarkan Reward</string>
-    <string name="request_text">Request Penjemputan</string>
+    <string name="request_text">Request Pengambilan</string>
+    <string name="request_title">Request Pengambilan</string>
+    <string name="address_text">Alamat</string>
+    <string name="type">Jenis:</string>
+    <string name="notes_text">Catatan*</string>
+    <string name="organic_text">Organik</string>
+    <string name="non_organic_text">Non-organik</string>
+    <string name="notes_information">*Informasi Opsional</string>
+    <string name="request">Request</string>
 </resources>
