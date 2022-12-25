@@ -27,6 +27,11 @@
     <string name="nominal_info">*Nilai minimum penukaran Rp50.000</string>
     <string name="redeem">Tukarkan</string>
     <string name="back">back</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="login">LogIn</string>
+    <string name="register_question">Belum punya akun? Daftar di sini</string>
+    <string name="daftar">Daftar</string>
     <string-array name="e_wallet">
         <item>GoPay</item>
         <item>Dana</item>
