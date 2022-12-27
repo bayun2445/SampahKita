@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "316226922866",
+    "project_id": "sampah-kita",
+    "storage_bucket": "sampah-kita.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:316226922866:android:45759229cc3bb1a86a55eb",
+        "android_client_info": {
+          "package_name": "com.example.sampahkita"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "316226922866-6mulmgo5eabpl88uci8vd54kicn863nn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyASNZDwnA8L7ei6uAIXTnshHvW9LpxYseE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "316226922866-6mulmgo5eabpl88uci8vd54kicn863nn.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

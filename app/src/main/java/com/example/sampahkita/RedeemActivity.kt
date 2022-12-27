@@ -1,4 +1,4 @@
-package com.example.myapplication
+package com.example.sampahkita
 
 import android.os.Bundle
 import android.widget.ArrayAdapter
