@@ -40,15 +40,20 @@ class SignupActivity: AppCompatActivity() {
 
                 databaseReference.addListenerForSingleValueEvent (object: ValueEventListener {
                     override fun onDataChange(snapshot: DataSnapshot) {
-                        if (snapshot.hasChild(username)){
+                        if (snapshot.hasChild(username)) {
                             Toast.makeText(this@SignupActivity, "Username tidak tersedia.",Toast.LENGTH_LONG).show()
                         } else {
-                            databaseReference.child(username).child("profile").child("password").setValue(password)
-                            databaseReference.child(username).child("profile").child("email").setValue(email)
+                            databaseReference.child("users").child(username).child("profile").child("password")
+                                .setValue(password)
+                            databaseReference.child("users").child(username).child("profile").child("email")
+                                .setValue(email)
 
-                            databaseReference.child(username).child("balances").child("reward_balance").setValue(0)
-                            databaseReference.child(username).child("balances").child("total_revenue").setValue(0)
-                            databaseReference.child(username).child("balances").child("total_sold_kg").setValue(0)
+                            databaseReference.child("users").child(username).child("balances").child("reward_balance")
+                                .setValue(0)
+                            databaseReference.child("users").child(username).child("balances").child("total_revenue")
+                                .setValue(0)
+                            databaseReference.child("users").child(username).child("balances").child("total_sold_kg")
+                                .setValue(0)
 
                             Toast.makeText(this@SignupActivity, "Sign Up behasil", Toast.LENGTH_LONG).show()
 
