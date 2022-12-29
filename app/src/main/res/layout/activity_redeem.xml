@@ -22,13 +22,13 @@
             <ImageButton
                 android:id="@+id/btn_back"
                 android:layout_width="46dp"
-                android:layout_height="40dp"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
+                android:layout_height="48dp"
                 android:layout_marginTop="38dp"
                 android:background="?android:selectableItemBackgroundBorderless"
+                android:contentDescription="@string/back"
                 android:src="@drawable/ic_baseline_arrow_back_33"
-                android:contentDescription="@string/back" />
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
 
             <TextView
                 android:id="@+id/tv_title_request"
@@ -44,7 +44,7 @@
                 app:layout_constraintTop_toTopOf="@+id/btn_back" />
 
             <TextView
-                android:id="@+id/balance_text"
+                android:id="@+id/tv_balance_text"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginEnd="16dp"
@@ -52,7 +52,7 @@
                 android:text="@string/balance_text"
                 android:textColor="@color/white"
                 android:textSize="18sp"
-                app:layout_constraintBottom_toTopOf="@id/balance"
+                app:layout_constraintBottom_toTopOf="@id/tv_balance"
                 app:layout_constraintEnd_toEndOf="parent" />
 
             <TextView
@@ -63,12 +63,12 @@
                 android:text="@string/currency"
                 android:textColor="@color/brown_text"
                 android:textSize="18sp"
-                app:layout_constraintBottom_toBottomOf="@id/balance"
-                app:layout_constraintEnd_toStartOf="@+id/balance"
-                app:layout_constraintTop_toTopOf="@+id/balance" />
+                app:layout_constraintBottom_toBottomOf="@id/tv_balance"
+                app:layout_constraintEnd_toStartOf="@+id/tv_balance"
+                app:layout_constraintTop_toTopOf="@+id/tv_balance" />
 
             <TextView
-                android:id="@+id/balance"
+                android:id="@+id/tv_balance"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/poppins"
@@ -76,7 +76,7 @@
                 android:textColor="@color/white"
                 android:textSize="30sp"
                 app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="@+id/balance_text" />
+                app:layout_constraintEnd_toEndOf="@+id/tv_balance_text" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
     </androidx.cardview.widget.CardView>
@@ -98,7 +98,8 @@
                 android:id="@+id/spinner_ewallet"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:spinnerMode="dropdown"/>
+                android:minHeight="48dp"
+                android:spinnerMode="dropdown" />
 
             <com.google.android.material.textfield.TextInputLayout
                 android:layout_width="match_parent"
@@ -107,7 +108,7 @@
                 app:boxBackgroundColor="@android:color/transparent">
 
                 <EditText
-                    android:id="@+id/et_ewallet"
+                    android:id="@+id/et_ewallet_account"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:hint="@string/ewallet_account"
@@ -127,7 +128,8 @@
             android:background="@android:color/transparent"
             app:boxBackgroundColor="@android:color/transparent">
 
-            <EditText
+            <id.adiandrea.rupiahedittext.RupiahEditText
+                android:id="@+id/et_redeem_nominal"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/poppins"
@@ -145,7 +147,7 @@
         </com.google.android.material.textfield.TextInputLayout>
 
         <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/btn_request"
+            android:id="@+id/btn_redeem"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/redeem"

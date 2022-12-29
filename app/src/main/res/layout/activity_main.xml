@@ -81,7 +81,7 @@
                 app:layout_constraintStart_toStartOf="parent">
 
                 <TextView
-                    android:id="@+id/balance_text"
+                    android:id="@+id/tv_balance_text"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="16dp"
@@ -89,7 +89,7 @@
                     android:text="@string/balance_text"
                     android:textColor="@color/white"
                     android:textSize="20sp"
-                    app:layout_constraintBottom_toTopOf="@id/balance"
+                    app:layout_constraintBottom_toTopOf="@id/tv_balance"
                     app:layout_constraintStart_toStartOf="parent" />
 
                 <TextView
@@ -101,11 +101,11 @@
                     android:textColor="@color/brown_text"
                     android:textSize="20sp"
                     app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintStart_toStartOf="@+id/balance_text"
-                    app:layout_constraintTop_toTopOf="@+id/balance" />
+                    app:layout_constraintStart_toStartOf="@+id/tv_balance_text"
+                    app:layout_constraintTop_toTopOf="@+id/tv_balance" />
 
                 <TextView
-                    android:id="@+id/balance"
+                    android:id="@+id/tv_balance"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:fontFamily="@font/poppins"
@@ -201,7 +201,7 @@
     </androidx.cardview.widget.CardView>
 
     <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/btn_request"
+        android:id="@+id/btn_main_request"
         android:layout_width="match_parent"
         android:layout_height="150dp"
         android:layout_marginStart="15dp"
@@ -216,7 +216,7 @@
         app:layout_constraintTop_toBottomOf="@id/top_container" />
 
     <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/btn_redeem"
+        android:id="@+id/btn_main_redeem"
         style="@style/Button.Gray"
         android:layout_width="match_parent"
         android:layout_height="150dp"
@@ -228,6 +228,6 @@
         android:text="@string/redeem_text"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/btn_request" />
+        app:layout_constraintTop_toBottomOf="@id/btn_main_request" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

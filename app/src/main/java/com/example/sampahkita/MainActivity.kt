@@ -3,7 +3,6 @@ package com.example.sampahkita
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.Toast
 import com.google.firebase.database.DataSnapshot
 import com.google.firebase.database.DatabaseError
 import com.google.firebase.database.FirebaseDatabase
@@ -33,7 +32,7 @@ class MainActivity : AppCompatActivity() {
             .child("balances")
             .addValueEventListener(object: ValueEventListener {
                 override fun onDataChange(snapshot: DataSnapshot) {
-                    balance.text = snapshot.child("reward_balance").value.toString()
+                    tv_balance.text = snapshot.child("reward_balance").value.toString()
                     revenue.text = snapshot.child("total_revenue").value.toString()
                     sold.text = snapshot.child("total_sold_kg").value.toString()
                 }
@@ -45,14 +44,16 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun setButtonListener() {
-        btn_request.setOnClickListener {
+        btn_main_request.setOnClickListener {
             Intent(this@MainActivity, RequestActivity::class.java).also{
+                it.putExtra("username", username)
                 startActivity(it)
             }
         }
 
-        btn_redeem.setOnClickListener {
+        btn_main_redeem.setOnClickListener {
             Intent(this@MainActivity, RedeemActivity::class.java).also {
+                it.putExtra("username", username)
                 startActivity(it)
             }
         }
